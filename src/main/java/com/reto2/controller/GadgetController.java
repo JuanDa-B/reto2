@@ -35,7 +35,7 @@ public class GadgetController {
     }
 
     @GetMapping("/{reference}")
-    public Optional<Gadget> getGadget(@PathVariable("id") String id) {
+    public Optional<Gadget> getGadget(@PathVariable("id") int id) {
         return gadgetService.getSupplement(id);
     }
 
@@ -53,7 +53,7 @@ public class GadgetController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public boolean delete(@PathVariable("id") String id) {
+    public boolean delete(@PathVariable("id") int id) {
         return gadgetService.delete(id);
     }
 }

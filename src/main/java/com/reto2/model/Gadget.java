@@ -17,7 +17,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Gadget {
 
     @Id
-    private String id;
+    private Integer id;
     private String brand;
     private String category;
     private String name;

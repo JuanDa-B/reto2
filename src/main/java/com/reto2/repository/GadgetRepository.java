@@ -21,7 +21,7 @@ public class GadgetRepository {
         return crudInterface.findAll();
     }
 
-    public Optional<Gadget> getGadget(String id) {
+    public Optional<Gadget> getGadget(int id) {
         return crudInterface.findById(id);
     }
 

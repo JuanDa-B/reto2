@@ -7,6 +7,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  *
  * @author DAVID BELTRAN
  */
-public interface GadgetCrudRepository extends MongoRepository<Gadget, String> {
+public interface GadgetCrudRepository extends MongoRepository<Gadget, Integer>{
     
 }

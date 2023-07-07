@@ -21,8 +21,8 @@ public class GadgetService {
         return repositorio.listAll();
     }
 
-    public Optional<Gadget> getSupplement(String reference) {
-        return repositorio.getGadget(reference);
+    public Optional<Gadget> getSupplement(int id) {
+        return repositorio.getGadget(id);
     }
 
     public Gadget create(Gadget gadget) {
@@ -68,7 +68,7 @@ public class GadgetService {
         }
     }
 
-    public boolean delete(String id) {
+    public boolean delete(int id) {
         Boolean aBoolean = getSupplement(id).map(supplement -> {
             repositorio.delete(supplement);
             return true;
